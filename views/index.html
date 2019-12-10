@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Disbursment App</title>
+        <link rel="stylesheet" type="text/css" href="/app.css">
+    </head>
+    <body>
+        <header>
+            <h3>Disburserment App</h3>
+        </header>
+        <main>
+            <form>
+                <div class="file-upload">
+                    <input type="file" accept=".csv" onchange="getFileData(this)" id="uploadedFile">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <div class="uploaded-file-details">
+                    <h3 class="uploadText">Upload csv file</h3>
+                    <button type="button" class="btn remove-button" onclick="removeFileData()"><i class="fas fa-times"></i></button>
+                </div>
+            </form>
+        </main>
+        <script src="https://kit.fontawesome.com/e974b5f5b8.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/app.js"></script>
+    </body>
+</html>
